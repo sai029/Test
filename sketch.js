@@ -53,11 +53,15 @@ function keyTyped() {
 class Anim_a{
 	constructor() {
 		this.diameter = 0;
+		this.alpha = 100;
 	}
 	draw() {
-		fill(0, 100, 100);
+		fill(0, 100, 100, this.alpha);
 		circle(width/2, height/2, this.diameter);
 		this.diameter += 10;
+		if(this.diameter > 200){
+			this.alpha *= 0.9;
+		}
 	}
 }
 
