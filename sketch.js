@@ -155,3 +155,8 @@ class Anim_h{
 		noStroke();
 	}
 }
+
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
