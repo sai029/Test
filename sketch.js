@@ -152,7 +152,6 @@ class Anim_h{
 		noFill();
 		circle(width/2, height/2, this.size);
 		this.size *= 1.25;
-		strokeWeight(1);
 		noStroke();
 	}
 }
