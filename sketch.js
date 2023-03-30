@@ -24,6 +24,14 @@ function draw() {
 	}
 }
 
+function touchStarted(){
+	sound[0].play();
+	animation.push(new Anim_a());
+	if(animation.length > 6){
+		animation.splice(1, 1);
+	}
+}
+
 function keyTyped() {
 	if(key == 'a'){
 		sound[0].play();
