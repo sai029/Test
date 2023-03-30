@@ -58,6 +58,8 @@ function touchStarted(){
 	if(animation.length > 6){
 		animation.splice(1, 1);
 	}
+
+	return false;
 }
 
 function keyTyped() {
