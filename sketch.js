@@ -37,7 +37,20 @@ function touchStarted(){
  	}else if(ptouchY < height / 3 && ptouchX > width / 2){
  		sound[1].play();
 		animation.push(new Anim_s());
+ 	}else if(ptouchY > height / 3 && ptouchY < height * 2 / 3 && ptouchX < width / 2){
+ 		sound[2].play();
+		animation.push(new Anim_d());
+ 	}else if(ptouchY > height / 3 && ptouchY < height * 2 / 3 && ptouchX > width / 2){
+ 		sound[3].play();
+		animation.push(new Anim_f());
+ 	}else if(ptouchY > height * 2 / 3 && ptouchX < width / 2){
+ 		sound[4].play();
+		animation.push(new Anim_g());
+ 	}else if(ptouchY > height * 2 / 3 && ptouchX > width / 2){
+ 		sound[5].play();
+		animation.push(new Anim_h());
  	}
+	
 	if(animation.length > 6){
 		animation.splice(1, 1);
 	}
