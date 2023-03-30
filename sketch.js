@@ -137,8 +137,8 @@ class Anim_g{
 	}
 	draw() {
 		fill(200, 100, 100);
-		rect(0 , height - this.yPos - 50, width, 50);
-		this.yPos *= 0.8;	
+		rect(0 , this.yPos - 50, width, 50);
+		this.yPos -= 40;	
 	}
 }
 
