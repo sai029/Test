@@ -21,13 +21,9 @@ function setup() {
 }
 
 function draw() {
-	if(windowWidth < 600){
-		ptouchX = touches.X;
-		ptouchY = touches.Y;
-	}else{
-		ptouchX = mouseX;
-		ptouchY = mouseY;
-	}
+
+	ptouchX = mouseX;
+	ptouchY = mouseY;
 	background(0);
 	for(let i = 0; i < animation.length; i++){
 		animation[i].draw();
