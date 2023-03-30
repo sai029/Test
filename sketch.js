@@ -1,6 +1,9 @@
 let sound = [];
 let animation = [];
 
+let ptouchX;
+let ptouchY;
+
 function preload(){
 	sound[0] = loadSound('./SoundSamples/se01.wav');
 	sound[1] = loadSound('./SoundSamples/se02.wav');
@@ -18,6 +21,9 @@ function setup() {
 }
 
 function draw() {
+	ptouchX = mouseX;
+	ptouchY = mouseY;
+
 	background(0);
 	for(let i = 0; i < animation.length; i++){
 		animation[i].draw();
@@ -25,8 +31,13 @@ function draw() {
 }
 
 function touchStarted(){
-	sound[0].play();
-	animation.push(new Anim_a());
+	if(ptouchY < height / 3 && ptouchX < width / 2){
+		sound[0].play();
+		animation.push(new Anim_a());
+ 	}else if(ptouchY < height / 3 && ptouchX > width / 2){
+ 		sound[1].play();
+		animation.push(new Anim_s());
+ 	}
 	if(animation.length > 6){
 		animation.splice(1, 1);
 	}
