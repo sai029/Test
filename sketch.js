@@ -81,10 +81,11 @@ function keyTyped() {
 		sound[5].play();
 		animation.push(new Anim_h());
 	}
+
 	if(key == ' '){
-		bgm.play()
+		bgm.play();
 	}
-	}
+	
 	if(animation.length > 6){
 		animation.splice(1, 1);
 	}
