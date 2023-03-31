@@ -6,7 +6,7 @@ let ptouchX;
 let ptouchY;
 
 function preload(){
-	sound[0] = loadSound('./SoundSamples/se01.wav');
+	sound[0] = loadSound('./SoundSamples/sample1.mp3');
 	sound[1] = loadSound('./SoundSamples/se02.wav');
 	sound[2] = loadSound('./SoundSamples/se03.wav');
 	sound[3] = loadSound('./SoundSamples/se04.wav');
@@ -82,8 +82,8 @@ function keyTyped() {
 		animation.push(new Anim_h());
 	}
 
-	if(key == ' '){
-		bgm.play();
+	if(key == ' ' && bgm.isPlaying() == false){
+		bgm.loop();
 	}
 	
 	if(animation.length > 6){
