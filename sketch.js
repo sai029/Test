@@ -1,5 +1,6 @@
 let sound = [];
 let animation = [];
+let bgm;
 
 let ptouchX;
 let ptouchY;
@@ -11,6 +12,8 @@ function preload(){
 	sound[3] = loadSound('./SoundSamples/se04.wav');
 	sound[4] = loadSound('./SoundSamples/se05.wav');
 	sound[5] = loadSound('./SoundSamples/se06.wav');
+
+	bgm = loadSound('./SoundSamples/bgm.mp3');
 }
 
 function setup() {
@@ -77,6 +80,10 @@ function keyTyped() {
 	} else if(key == 'h'){
 		sound[5].play();
 		animation.push(new Anim_h());
+	}
+	if(key == ' '){
+		bgm.play()
+	}
 	}
 	if(animation.length > 6){
 		animation.splice(1, 1);
