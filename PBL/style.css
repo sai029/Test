@@ -1,0 +1,111 @@
+body
+{
+	background-color: #ffffff;
+}
+
+.home_map{
+	background-color: #326693;
+}
+
+p,h2
+{
+	font-family: calibri;
+	text-align: center;
+}
+
+#logo
+{
+	float: center;
+}
+#navigation
+{
+	position: fixed;
+	top:20%;
+	left:2%;
+	display:inline-block;
+	width: 20%;
+	margin-top:0%;
+	padding-top: 0%;
+}
+.button
+{
+	margin:100px;
+	background-color: #22c375;
+	width: auto;
+	padding:1%;
+	margin: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+}
+.button:hover{
+	background-color: #1a8b54;
+	box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+a
+{
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.current
+{
+	width: 60%;
+}
+
+#bloc_prin
+{
+	display: block;
+}
+#notes
+{
+	margin-left:30%;
+}
+#info
+{
+	margin-left:30%;
+	margin-bottom:7%;
+}
+#piano
+{
+	text-align:center;
+}
+.photoTexte
+{
+	display:none;
+}
+.animal
+{
+	width:40%;
+	vertical-align: center;
+}
+.text
+{
+	position: fixed;
+	background-color:white;
+	padding:1%;
+	width:25%;
+	top:5%;
+	right:13%;
+}
+#empty
+{
+	background-color: white;
+	padding:13%;
+	margin-right:15%;
+}
+#fixed {
+	position: fixed;	/* 要素の位置を固定する */
+	bottom: 550; /* 基準の位置を画面の一番下に指定する */
+	right: 0; /* 基準の位置を画面の一番右に指定する */
+	width: 300px; /* 幅を指定する */
+	border: 3px solid #326693; /* ボーダーを指定する */
+	}
+table{
+	margin: auto;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+
