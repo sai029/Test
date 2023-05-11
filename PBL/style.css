@@ -7,7 +7,7 @@ body
 	background-color: #326693;
 }
 
-p,h2
+p, h2
 {
 	font-family: calibri;
 	text-align: center;
@@ -87,22 +87,26 @@ a
 	top:5%;
 	right:13%;
 }
+
 #empty
 {
 	background-color: white;
 	padding:13%;
 	margin-right:15%;
 }
+
 #fixed {
 	position: fixed;	/* 要素の位置を固定する */
 	bottom: 550; /* 基準の位置を画面の一番下に指定する */
 	right: 0; /* 基準の位置を画面の一番右に指定する */
 	width: 300px; /* 幅を指定する */
 	border: 3px solid #326693; /* ボーダーを指定する */
-	}
+}
+
 table{
 	margin: auto;
 }
+
 img{
 	max-width: 100%;
 	height: auto;
