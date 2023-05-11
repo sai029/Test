@@ -20,6 +20,7 @@
     text-decoration: none;
     background-color: #ccc;
     border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 .link li a:hover{
